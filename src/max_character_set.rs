@@ -3,20 +3,23 @@ use crate::image_converter::character_set_trait::{
 };
 use std::collections::HashMap;
 
-pub struct TenCharacterSet {
+pub struct MaxCharacterSet {
     characters: HashMap<usize, String>,
 }
 
-impl TenCharacterSet {
+impl MaxCharacterSet {
     #[allow(dead_code)]
     pub fn new() -> Self {
-        TenCharacterSet {
-            characters: construct_character_set_from_string("@%#*+=-:. ".to_string()),
+        MaxCharacterSet {
+            characters: construct_character_set_from_string(
+                "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
+                    .to_string(),
+            ),
         }
     }
 }
 
-impl CharacterSet for TenCharacterSet {
+impl CharacterSet for MaxCharacterSet {
     fn get_character_set_size(&self) -> u8 {
         self.characters.len() as u8
     }
