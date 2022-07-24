@@ -3,7 +3,7 @@
 Converts images to ASCII images, runs in the cli and uses rust.
 
 Example input image and its output:
-<img src="static/github.png" alt="Logo" width="80" height="80">
+<img src="static/github.jpg" alt="Logo" width="80" height="80">
 ```
 . . . . . . . . . . . . . . . . . : = + % @ @ @ @ @ @ % # = : . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . - + # % @ @ @ @ @ @ @ @ @ @ % # # : . . . . . . . . . . . . . . . 
