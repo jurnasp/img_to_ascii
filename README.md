@@ -1,4 +1,4 @@
-## About The Project
+# img_to_ascii
 
 Converts images to ASCII images, runs in the cli and uses rust.
 
